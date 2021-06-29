@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #222;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flexContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+div#wrap{
+    width: 800px;
+    height: 300px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 20px auto;
+}
+
+nav#gnb{
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+
+ul#mainMenu{
+    border: 1px solid #80ff80;
+}
+
+.mainLi{
+    border: 1px solid #f80;
+
+    position: relative;
+}
+
+#gnb a{
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#gnb ul.subMenu{
+    display: none;
+    position: absolute;
+
+}
+
+
+
+/*하이라이트 효과 :hover*/
+#gnb li.mainLi:hover>a,
+#gnb li.subLi>a:hover{
+    background-color: #08f;
+    color: #fff;
+}
+
+/*하이라이트 효과 :hover*/

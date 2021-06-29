@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    color: #222;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flexContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+body{
+    background-color: #fff;
+}
+
+div#wrap{
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid #000;
+    margin: 20px auto;
+
+}
+
+h1{
+    text-align: center;
+}
+
+nav#gnb{
+    /*border: 1px solid #000;*/
+    margin: 20px auto;
+}
+
+ul#mainMenu{
+    /*border: 1px solid #000;*/
+}
+
+#gnb a{
+    width: 160px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #eee;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+#gnb li.mainLi{
+    margin: 0 auto;
+    /*border: 1px solid #f80;*/
+    text-align: center;
+    width: 165px;
+}
+
+.mainLi>a{
+    height: 50px;
+    line-height: 50px;
+}
+
+.subLi>a{
+    height: 40px;
+    line-height: 40px;
+}
+
+.mainLi:hover>a,
+.subLi>a:hover{
+    color: #fff;
+    background-color: lightskyblue;
+}
+
+.subMenu{
+    display: none;
+    position: relative;
+    /* relative 속성을 사용해야 아래쪽에 작성된 레이아웃을 밀어내지 않음 */
+}

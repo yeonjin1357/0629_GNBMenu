@@ -1,0 +1,136 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #222;
+}
+
+.flexContainer {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+#gnb li.mainLi:hover>a{
+    background-color: rgba(168, 97, 97, 0.88);
+    color: #fff;
+}
+
+#gnb li.subLi>a:hover{
+    color: #000;
+    background-color: #eee;
+}
+
+
+div#gnbBGFrame {
+    width: 1200px;
+    margin: 0 auto;
+   /* border: 1px solid #f80;*/
+    position: relative;
+}
+
+div#gnbBG {
+    width: 1200px;
+    height: 193px;
+    /*border: 1px solid #000;*/
+
+    position: absolute; /*3인칭 요소를 중앙에 배치하기 위해서는 부모요소에다가 마진과 posr를 넣는다*/
+    display: none;
+    background-color: rgba(168, 97, 97, 0.88);
+}
+
+
+
+div#wrap {
+    /*border: 1px solid #000;*/
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#wrap h2 {
+    text-align: center;
+    line-height: 300px;
+}
+
+div#headerFrame {
+    /*border: 1px solid #aaa;*/
+    background-color: #eee;
+}
+
+#headerlogo {
+    width: 200px;
+    /*border: 1px solid #000;*/
+    text-align: center;
+    line-height: 100px;
+}
+
+
+
+nav#gnb {
+    /*border: 1px solid #08f;*/
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+#gnb ul#mainMenu {
+    /*border: 4px dotted #000;*/
+    padding-right: 40px;
+    justify-content: flex-end;
+    /* display : flex가 지정되어있을때 가능 */
+    align-items: flex-end;
+    /* 세로방향 정렬 */
+    height: 100px;
+}
+
+#gnb a {
+    width: 150px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-weight: bold;
+    font-size: 17px;
+    display: inline-block;
+
+    /*background-color: #fff;*/
+}
+
+#gnb li.mainLi>a{
+    /*border: 1px solid #0f0;*/
+}
+
+#gnb ul.subMenu {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    /*background-color: #fff;*/
+}
+
+#gnb li.subLi>a{
+    color: #fff;
+}
+
+header#header {
+    /*border: 1px solid #f80;*/
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+div#slide {
+    border: 1px solid #aaa;
+}
